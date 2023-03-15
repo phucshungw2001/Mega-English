@@ -7,52 +7,68 @@
     android:background="@color/light_blue"
     tools:context=".dictionary_activity">
 
+    <ImageView
+        android:id="@+id/bkgimg"
+        android:layout_width="411dp"
+        android:layout_height="733dp"
+        android:src="@drawable/background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/txtSearch"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginStart="48dp"
         android:background="@drawable/button2_layout"
         android:gravity="center"
         android:hint="Enter search word"
         android:textColorHint="@color/primary_blue"
         android:textSize="22dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtInf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079"
+        app:layout_constraintTop_toTopOf="@+id/bkgimg"
+        app:layout_constraintVertical_bias="0.256"
         tools:ignore="MissingConstraints" />
 
-    <ImageButton
+    <Button
         android:id="@+id/btnSearch"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="168dp"
+        android:background="@drawable/magnifying_glass"
+        android:foregroundGravity="center_vertical"
         android:gravity="center_horizontal"
         android:onClick="sendRequestOnClick"
-        android:background="@drawable/magnifying_glass"
         android:text="Find"
-        android:foregroundGravity="center_vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/txtInf"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="@id/txtSearch"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.176"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSearch"
+        app:layout_constraintVertical_bias="0.371"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/txtInf"
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="416dp"
+        android:layout_height="158dp"
         android:background="@color/palette"
         android:hint="Definitions ..."
         android:padding="20dp"
         android:textColor="@color/white"
         android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSearch" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
