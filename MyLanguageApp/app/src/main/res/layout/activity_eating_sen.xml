@@ -1,0 +1,149 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".greeting_sen"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="Eating Sentences "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGreeting">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="CAN WE HAVE A TABLE FOR TWO ?\nChúng tôi có thể đặt bàn cho 2 người không ?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="TWO BLACK COFFEE\nCho tôi 2 cà phê đen"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="A PINT OF BEER\nCho tôi một panh bia"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WHAT DO YOU WANT TO DRINK ?\nBạn muốn uống gì ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="ARE YOU READY TO ORDER ?\nBạn sẵn sàng để gọi món chưa ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="WE HAVE COD\nChúng tôi có cá tuyết"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="SALAD FRUIT AND ICE CREAM\nSalad trái cây và kem"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WILL YOU HAVE COFFEE ?\nBạn dùng thêm cà phê nhé ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="DELICIOUS FOODS\nĐồ ăn ngon quá"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I LIKE CHICKEN\n Tôi thích gà"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I FEEL FULL\nTôi cảm thấy no"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="MEAL IS VERY NICE\nBữa ăn rất tuyệt"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="THAT SMELL'S GOOD\nThơm quá"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

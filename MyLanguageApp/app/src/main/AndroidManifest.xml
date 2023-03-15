@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinhvien.myrex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".baitap_activity"></activity>
+        <activity android:name=".note_update_delete" />
+        <activity android:name=".note_list" />
+        <activity android:name=".note_updatedelete" />
+        <activity android:name=".video_vid3" />
+        <activity android:name=".video_vid2" />
+        <activity android:name=".video_vid1" />
+        <activity android:name=".note_themtu_activity" />
+        <activity android:name=".note_activity" />
+        <activity android:name=".video_activity" />
+        <activity android:name=".listen_activity" />
+        <activity android:name=".idioms_activity" />
+        <activity android:name=".grammar_activity" />
+        <activity android:name=".eating_sen" />
+        <activity android:name=".place_sen" />
+        <activity android:name=".entertain_sen" />
+        <activity android:name=".health_sen" />
+        <activity android:name=".job_sen" />
+        <activity android:name=".greeting_sen" />
+        <activity android:name=".samplesentence_activity" />
+        <activity android:name=".dictionary_activity" />
+        <activity android:name=".school_activity" />
+        <activity android:name=".syncmain" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

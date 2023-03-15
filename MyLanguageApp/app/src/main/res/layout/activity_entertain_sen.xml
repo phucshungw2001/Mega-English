@@ -1,0 +1,149 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".greeting_sen"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="Entertainment Sentences "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGreeting">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="HOW DO YOU FEEL ?\nBạn cảm thấy thế nào ?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="DO YOU FEEL SICK ?\nBạn có thấy mệt không ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="ARE YOU ALL RIGHT ?\nBạn cảm thấy ổn chứ ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I FEEL VERY GOOD\nTôi cảm thấy rất khỏe"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I DON'T FEEL WELL\nTôi thấy không khẻ lắm"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I'VE GOT A FEVER\nTôi bị sốt"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I HAVE GOT A FLU\nTôi bị cúm"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I'VE GOT A STOMACH-ACHE\nTôi bị đau bụng"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I'VE GOT A PAIN IN MY NECK\nTôi bị đau cổ"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I'M RETIRED \n Tôi đa nghỉ hưu"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I WANNA TAKE A REST\nTôi muốn nghỉ ngơi"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="ARE YOU FEELING ANY BETTER ?\nBây giờ cậu đã thấy đỡ hơn chưa ?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="GET WELL SOON\nNhanh khỏe nhé"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

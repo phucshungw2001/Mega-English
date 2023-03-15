@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".greeting_sen"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="Greeting Sentences "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGreeting">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="HELLO\nXin chào"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="HOW ARE YOU ?\nBạn khỏe không ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="HOW'S IT GOING ?\nDạo này sao rồi ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="LONG TIME NO SEE \nLâu rồi không gặp"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="SO GOOD TO SEE YOU AGAIN\nThật tốt khi gặp lại bạn"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="IT'S MY HONOR TO MEET YOU\nRất hân hạnh được gặp bạn"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="PLEASE HAVE A SEAT\nMời bàn ngồi"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="THANKS FOR AGREEING TO MEET WITH ME\nCảm ơn vì đồng ý cuộc hẹn này"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="GOOD MORNING\nChào buổi sáng"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="HOW ARE YOU TODAY ?\nHôm nay bạn thế nào ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="WHAT'S UP\nDạo này có gì mới không ?"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="NICE TO MEET YOU\nRất vui được gặp bạn"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="HELLO\nXin Chào"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

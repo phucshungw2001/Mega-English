@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_blue"
+    tools:context=".note_themtu_activity">
+<TextView
+    android:id="@+id/txtThem"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="ADD WORD"
+    android:textStyle="bold"
+    android:textSize="25dp"
+    android:gravity="center"
+    android:textColor="@color/black"
+    tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtThem"
+        tools:ignore="InvalidId">
+       <EditText
+           android:id="@+id/edtWord"
+           android:layout_width="300dp"
+           android:layout_height="50dp"
+           android:hint="WORD..."
+           android:layout_gravity="center"
+           android:textColorHint="@color/black"
+           android:textColor="@color/black"
+           android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtDef"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:hint="DEFINITIONS..."
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:ignore="InvalidId,MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/line1">
+
+        <ImageButton
+            android:id="@+id/ibtnCam"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/camera"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/ibtnFol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/upload"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgLoading"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="12dp"
+        android:foregroundGravity="center_vertical"
+        android:src="@drawable/loading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/imgLoading">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="60dp"
+            android:text="Add"
+            android:background="@drawable/button2_layout"/>
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="95dp"
+            android:text="Cancel"
+            android:background="@drawable/button2_layout"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

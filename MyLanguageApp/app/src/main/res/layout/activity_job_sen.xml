@@ -1,0 +1,147 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".greeting_sen"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:id="@+id/txtGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_horizontal"
+        android:text="Job Sentences "
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtGreeting">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WHAT DO YOU DO ?\nBạn làm nghề gì ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WHAT'S YOUR JOB ?\nCông việc của bạn là gì ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WHAT SORT OF WORK DO YOU DO ?\nBạn làm loại công việc gì ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="WHAT LINE OF WORK ARE YOU IN ?\nBạn làm trong ngành gì ?"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I'M A STUDENT\nTôi là học sinh"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I'VE GOT A FULL-TIME JOB\nTôi làm việc toàn thời gian"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I WORK AS A PROGRAMMER\nTôi làm nghề lập trình viên"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I'VE GOT A PART-TIME JOB\nTôi làm việc bán thời gian"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I'M LOOKING FOR WORK\nTôi đang tìm việc"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I'M RETIRED \n Tôi đa nghỉ hưu"
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I WORK FOR MYSELF\nTôi tự làm chủ"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/new_blue"
+                android:gravity="center"
+                android:text="I HAVE MY OWN BUSINESS\nTôi có công ty riêng"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="I WORK FROM HOME\nTôi làm việc tại nhàn  "
+                android:textSize="18dp"
+                android:background="@color/new_blue"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
