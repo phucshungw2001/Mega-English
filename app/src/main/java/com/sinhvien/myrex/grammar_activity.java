@@ -13,10 +13,10 @@ import java.util.List;
 
 public class grammar_activity extends Activity {
 
-    ExpandableListView expandableListView;
-    List<String> listdataHeader;
-    HashMap<String,List<String>> listdataChild;
-    CustomExpandableListView customExpandableListView;
+    private ExpandableListView expandableListView;
+    private List<String> listdataHeader;
+    private HashMap<String,List<String>> listdataChild;
+    private CustomExpandableListView customExpandableListView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

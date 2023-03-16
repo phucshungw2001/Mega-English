@@ -17,107 +17,106 @@ import java.util.ArrayList;
 
 public class listen_activity extends AppCompatActivity {
 
-    TextView txtTitle,txtTimeSong,txtTimeTotal;
-    SeekBar skSong;
-    ImageView btnPrev, btnStop, btnNext;
-    ImageView btnPlay;
-    int position = 0;
-    MediaPlayer mediaPlayer;
+    private TextView txtTitle,txtTimeSong,txtTimeTotal;
+    private SeekBar skSong;
+    private ImageView btnPrev, btnStop, btnNext;
+    private ImageView btnPlay;
+    private int position = 0;
+    private MediaPlayer mediaPlayer;
 
     ArrayList<Audio_listen> arraySong;
+
+    private void bindingView(){
+        txtTitle =  findViewById(R.id.txtTitle);
+        txtTimeSong =  findViewById(R.id.timeSong);
+        txtTimeTotal =  findViewById(R.id.timeTotal);
+        skSong =  findViewById(R.id.seekBar);
+        btnPrev =  findViewById(R.id.previous);
+        btnPlay =  findViewById(R.id.start);
+        btnStop =  findViewById(R.id.stop);
+        btnNext =  findViewById(R.id.next);
+    }
+
+    private  void  bindingAction(){
+        btnPlay.setOnClickListener(this :: onBtnClickPlaye);
+        btnStop.setOnClickListener(this :: onBtnClickStop);
+        btnPrev.setOnClickListener(this :: onBtnClickPrev);
+        btnNext.setOnClickListener(this :: onBtnClickNext);
+    }
+
+    private void onBtnClickNext(View view) {
+        position --;
+        if (position < 0){
+            position = arraySong.size() - 1;
+        }
+        if (mediaPlayer.isPlaying()){
+            mediaPlayer.stop();
+        }
+        KhoiTaoMediaPlayer();
+        mediaPlayer.start();
+        btnPlay.setImageResource(R.drawable.btnplay);
+        SetTimeTotal();
+        UpdateTimeSong();
+    }
+
+    private void onBtnClickPrev(View view) {
+        position++;
+        if (position > arraySong.size() - 1){
+            position = 0;
+        }
+        if (mediaPlayer.isPlaying()){
+            mediaPlayer.stop();
+        }
+        KhoiTaoMediaPlayer();
+        mediaPlayer.start();
+        btnPlay.setImageResource(R.drawable.btnplay);
+        SetTimeTotal();
+        UpdateTimeSong();
+    }
+
+    private void onBtnClickStop(View view) {
+        mediaPlayer.stop();
+        mediaPlayer.release();
+        btnPlay.setImageResource(R.drawable.btnplay);
+        KhoiTaoMediaPlayer();
+    }
+
+    private void onBtnClickPlaye(View view) {
+        if (btnPlay.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.btnplay).getConstantState())) {
+            mediaPlayer.start();
+            btnPlay.setImageResource(R.drawable.btnpause);
+        } else {
+            mediaPlayer.pause();
+            btnPlay.setImageResource(R.drawable.btnplay);
+        }
+        SetTimeTotal();
+        UpdateTimeSong();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listen);
-
-        txtTitle = (TextView) findViewById(R.id.txtTitle);
-        txtTimeSong = (TextView) findViewById(R.id.timeSong);
-        txtTimeTotal = (TextView) findViewById(R.id.timeTotal);
-        skSong = (SeekBar) findViewById(R.id.seekBar);
-        btnPrev = (ImageView) findViewById(R.id.previous);
-        btnPlay = (ImageView) findViewById(R.id.start);
-        btnStop = (ImageView) findViewById(R.id.stop);
-        btnNext = (ImageView) findViewById(R.id.next);
+        bindingView();
+        bindingAction();
 
         AddSong();
         KhoiTaoMediaPlayer();
         SetTimeTotal();
 
-        btnPlay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (btnPlay.getDrawable().getConstantState().equals(getResources().getDrawable(R.drawable.btnplay).getConstantState())) {
-                    mediaPlayer.start();
-                    btnPlay.setImageResource(R.drawable.btnpause);
-                } else {
-                    mediaPlayer.pause();
-                    btnPlay.setImageResource(R.drawable.btnplay);
-                }
-                SetTimeTotal();
-                UpdateTimeSong();
-            }
-        });
         skSong.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-
             }
-
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
 
             }
-
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 mediaPlayer.seekTo(skSong.getProgress());
             }
         });
-
-    btnStop.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            mediaPlayer.stop();
-            mediaPlayer.release();
-            btnPlay.setImageResource(R.drawable.btnplay);
-            KhoiTaoMediaPlayer();
-        }
-    });
-    btnPrev.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            position++;
-            if (position > arraySong.size() - 1){
-                position = 0;
-            }
-            if (mediaPlayer.isPlaying()){
-                mediaPlayer.stop();
-            }
-            KhoiTaoMediaPlayer();
-            mediaPlayer.start();
-            btnPlay.setImageResource(R.drawable.btnplay);
-            SetTimeTotal();
-            UpdateTimeSong();
-        }
-    });
-    btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                position --;
-                if (position < 0){
-                    position = arraySong.size() - 1;
-                }
-                if (mediaPlayer.isPlaying()){
-                    mediaPlayer.stop();
-                }
-                KhoiTaoMediaPlayer();
-                mediaPlayer.start();
-                btnPlay.setImageResource(R.drawable.btnplay);
-                SetTimeTotal();
-                UpdateTimeSong();
-            }
-        });
-
     }
     private void SetTimeTotal()
     {

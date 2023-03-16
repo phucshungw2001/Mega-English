@@ -13,35 +13,41 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    Button btnSync, btnSch;
+    private Button btnSync, btnSch;
+
+    private void bindingView(){
+        btnSch = findViewById(R.id.btnSchool);
+        btnSync= findViewById(R.id.btnSync);
+    }
+
+    private  void  bindingAction(){
+        btnSch.setOnClickListener(this :: onBtnClickSch);
+        btnSync.setOnClickListener(this :: onBtnClickSync);
+    }
+
+    private void onBtnClickSch(View view) {
+        Intent i= new Intent(MainActivity.this,school_activity.class);
+        startActivity(i);
+    }
+
+    private void onBtnClickSync(View view) {
+        Intent i = new Intent(MainActivity.this,syncmain.class);
+        startActivity(i);
+    }
 
     private MediaPlayer backgroundMusic;
-    Intent service;
+    private Intent service;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-
         service = new Intent(getApplicationContext(),MusicBackGround.class);
         startService(new Intent(getApplicationContext(),MusicBackGround.class));
 
-        btnSch = (Button)findViewById(R.id.btnSchool);
-        btnSync= (Button)findViewById(R.id.btnSync);
-        btnSync.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,syncmain.class);
-                startActivity(i);
-            }
-        });
-        btnSch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i= new Intent(MainActivity.this,school_activity.class);
-                startActivity(i);
-            }
-        });
+        bindingView();
+        bindingAction();
     }
 
 }
