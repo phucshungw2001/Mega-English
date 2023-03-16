@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:centerColor="@color/cardview_light_background"
+                android:centerX="60%"
+                android:endColor="@color/red"
+                android:startColor="@color/light_blue"
+                ></gradient>
+            <corners
+                android:bottomLeftRadius="500sp"
+                />
+            <stroke android:color="@color/white" android:width="2dp"/>
+
+        </shape>
+    </item>
+</selector>

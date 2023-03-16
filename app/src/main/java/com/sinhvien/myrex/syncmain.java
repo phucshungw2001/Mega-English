@@ -12,14 +12,33 @@ import android.widget.Toast;
 
 public class syncmain extends Activity {
 
-    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7;
+    private Button btn1;
+    private Button btn2;
+    private Button btn3;
+    private Button btn5;
+    private Button btn6;
+    private Button btn7;
+
+    private void bindingView(){
+        btn1 =  findViewById(R.id.btn1);
+        btn2 =  findViewById(R.id.btn2);
+        btn3 =  findViewById(R.id.btn3);
+        btn5 =  findViewById(R.id.btn5);
+        btn6 =  findViewById(R.id.btn6);
+        btn7 =  findViewById(R.id.btn7);
+    }
+
+    private  void  bindingAction(){
+
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_syncmain);
+        bindingView();
 
-        btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -27,7 +46,7 @@ public class syncmain extends Activity {
                 startActivity(i);
             }
         });
-        btn2 = (Button) findViewById(R.id.btn2);
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +55,7 @@ public class syncmain extends Activity {
             }
         });
 
-        btn3 = (Button) findViewById(R.id.btn3);
+
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,16 +63,8 @@ public class syncmain extends Activity {
                 startActivity(i);
             }
         });
-         btn4 = (Button) findViewById(R.id.btn4);
-         btn4.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent i = new Intent(syncmain.this,idioms_activity.class);
-                 startActivity(i);
-             }
-         });
 
-         btn5 = (Button) findViewById(R.id.btn5);
+
          btn5.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -61,7 +72,7 @@ public class syncmain extends Activity {
                  startActivity(i);
              }
          });
-         btn6 = (Button) findViewById(R.id.btn6);
+
          btn6.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -71,7 +82,7 @@ public class syncmain extends Activity {
              }
          });
 
-         btn7 = (Button) findViewById(R.id.btn7);
+
          btn7.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {

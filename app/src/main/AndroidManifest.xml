@@ -15,7 +15,6 @@
         <activity android:name=".baitap_activity"></activity>
         <activity android:name=".note_update_delete" />
         <activity android:name=".note_list" />
-        <activity android:name=".note_updatedelete" />
         <activity android:name=".video_vid3" />
         <activity android:name=".video_vid2" />
         <activity android:name=".video_vid1" />
@@ -32,7 +31,9 @@
         <activity android:name=".job_sen" />
         <activity android:name=".greeting_sen" />
         <activity android:name=".samplesentence_activity" />
-        <activity android:name=".dictionary_activity" />
+        <activity android:name=".dictionary_activity"
+            android:parentActivityName=".syncmain"
+            />
         <activity android:name=".school_activity" />
         <activity android:name=".syncmain" />
         <activity android:name=".MainActivity">

@@ -9,53 +9,15 @@
     android:theme="@style/Theme.AppCompat"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="480dp"
-        android:weightSum="5"
-        android:padding="10dp"
-        android:background="@drawable/button_layout"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Greeting"
-            android:layout_margin="5dp"
-            android:background="@color/cyan"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Express Emotion"
-            android:layout_margin="5dp"
-            android:background="@color/cyan"/>
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@color/cyan"
-            android:text="Interests" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Shopping"
-            android:layout_margin="5dp"
-            android:background="@color/cyan"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="Movie Theater"
-            android:layout_margin="5dp"
-            android:background="@color/cyan"/>
-
-    </LinearLayout>
+        android:layout_height="250dp"
+        android:paddingTop="80dp"
+        android:text="Listen"
+        android:textAlignment="center"
+        android:textColor="#03A9F4"
+        android:textSize="40sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,35 +27,40 @@
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true">
-            <TextView
-            android:id="@+id/timeSong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="00:00"
-            android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/timeSong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </RelativeLayout>
+
         <RelativeLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true">
+
                 <TextView
-                android:id="@+id/timeTotal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="00:00"
-                android:textColor="@color/black" />
+                    android:id="@+id/timeTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/black" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>
@@ -110,55 +77,55 @@
         android:layout_alignParentStart="true"/>
 
     <LinearLayout
-        android:layout_width="360dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="0dp"
-        android:weightSum="4"
-        android:padding="10dp">
+        android:padding="10dp"
+        android:weightSum="4">
 
         <ImageView
             android:id="@+id/previous"
             style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
+            android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/btnprevious"
+            android:layout_weight="1"
             android:onClick="musicpause"
+            android:src="@drawable/btnprevious"
             tools:ignore="OnClick" />
 
         <ImageView
             android:id="@+id/start"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
+            android:layout_height="48dp"
             android:layout_gravity="center"
-            android:src="@drawable/btnplay"
+            android:layout_weight="1"
             android:onClick="musicplay"
+            android:src="@drawable/btnplay"
             tools:ignore="OnClick" />
 
         <ImageView
             android:id="@+id/stop"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
+            android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/btnstop"
+            android:layout_weight="1"
             android:onClick="musicstop"
+            android:src="@drawable/btnstop"
             tools:ignore="OnClick" />
 
         <ImageView
             android:id="@+id/next"
             style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="20dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
+            android:layout_height="48dp"
             android:layout_margin="20dp"
-            android:src="@drawable/btnskip"
+            android:layout_weight="1"
             android:onClick="musicstop"
+            android:src="@drawable/btnskip"
             tools:ignore="OnClick" />
 
     </LinearLayout>

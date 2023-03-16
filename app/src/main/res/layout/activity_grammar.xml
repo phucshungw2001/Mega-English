@@ -7,15 +7,14 @@
     tools:context=".grammar_activity"
     android:background="@color/palette">
 
-  
 
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="689dp"
         android:layout_gravity="center_vertical"
+        android:childDivider="#5CB9E3"
         android:divider="#5CB9E3"
-        android:dividerHeight="0.5dp"
-        android:childDivider="#5CB9E3"/>
+        android:dividerHeight="0.5dp" />
 
 </LinearLayout>

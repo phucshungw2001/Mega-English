@@ -15,13 +15,11 @@ public class Database extends SQLiteOpenHelper
 {
     public static String database_name = "your_note";
     private static final int database_version = 1;
-
     private static final String table_Tu = "Tu";
     private static final String tu_id = "id";
     private static final String tu_name = "name";
     private static final String tu_dn = "dinhNghia";
     private static final String tu_img = "image";
-
 
 
     private static final String Create_table_tu = "CREATE TABLE " + table_Tu + "("
@@ -53,12 +51,10 @@ public class Database extends SQLiteOpenHelper
     public void addTu(String name, String dinhNghia, byte[] image)
     {
         SQLiteDatabase db = this.getWritableDatabase();
-
         ContentValues cv = new ContentValues();
         cv.put(tu_name, name);
         cv.put(tu_dn, dinhNghia);
         cv.put(tu_img, image);
-
         db.insert(table_Tu, null, cv);
     }
 
