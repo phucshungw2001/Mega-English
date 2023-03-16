@@ -32,68 +32,59 @@ public class note_themtu_activity extends AppCompatActivity {
     int REQUEST_CODE_CAMERA = 123;
     int REQUEST_CODE_FOLDER = 456;
 
+    private void bindingView(){
+        btnAdd    =  findViewById(R.id.btnAdd);
+        btnCancel =  findViewById(R.id.btnCancel);
+        edtWord   =  findViewById(R.id.edtWord);
+        edtDef    =  findViewById(R.id.edtDef);
+        imgHinh   =  findViewById(R.id.imgLoading);
+        ibtnCamera=  findViewById(R.id.ibtnCam);
+        ibtnFolder=  findViewById(R.id.ibtnFol);
+    }
+
+    private  void  bindingAction(){
+        ibtnCamera.setOnClickListener(this :: onBtnClickCamera);
+        ibtnFolder.setOnClickListener(this :: onBtnClickFoler);
+        btnAdd.setOnClickListener(this :: onBtnClickAdd);
+        btnCancel.setOnClickListener(this :: onBtnClickCancel);
+    }
+
+    private void onBtnClickCancel(View view) {
+        Intent i = new Intent(note_themtu_activity.this,note_activity.class);
+        startActivity(i);
+    }
+
+    private void onBtnClickAdd(View view) {
+        BitmapDrawable bitmapDrawable = (BitmapDrawable) imgHinh.getDrawable();
+        Bitmap bitmap = bitmapDrawable.getBitmap();
+        ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArray);
+        byte[] hinhanh = byteArray.toByteArray();
+
+        db.addTu(edtWord.getText().toString(), edtDef.getText().toString(), hinhanh);
+        Toast.makeText(note_themtu_activity.this, "Added :))", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(note_themtu_activity.this,note_activity.class));
+
+    }
+
+    private void onBtnClickFoler(View view) {
+        Intent i = new Intent(Intent.ACTION_PICK);
+        i.setType("image/*");
+        startActivityForResult(i,REQUEST_CODE_FOLDER);
+    }
+
+    private void onBtnClickCamera(View view) {
+        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(i, REQUEST_CODE_CAMERA);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_note_themtu);
-
         db = new Database(this);
-
-        btnAdd    = (Button) findViewById(R.id.btnAdd);
-        btnCancel = (Button) findViewById(R.id.btnCancel);
-        edtWord   = (EditText) findViewById(R.id.edtWord);
-        edtDef    = (EditText) findViewById(R.id.edtDef);
-        imgHinh   = (ImageView) findViewById(R.id.imgLoading);
-        ibtnCamera=(ImageButton) findViewById(R.id.ibtnCam);
-        ibtnFolder=(ImageButton) findViewById(R.id.ibtnFol);
-
-        ibtnCamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(i, REQUEST_CODE_CAMERA);
-            }
-        });
-
-        ibtnFolder.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_PICK);
-                i.setType("image/*");
-                startActivityForResult(i,REQUEST_CODE_FOLDER);
-            }
-        });
-
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                //chuyen data imgview -> byte[]
-                BitmapDrawable bitmapDrawable = (BitmapDrawable) imgHinh.getDrawable();
-                Bitmap bitmap = bitmapDrawable.getBitmap();
-                ByteArrayOutputStream byteArray = new ByteArrayOutputStream();
-                bitmap.compress(Bitmap.CompressFormat.PNG, 100, byteArray);
-                byte[] hinhanh = byteArray.toByteArray();
-
-//                note_activity.database.INSERT_TU(
-//                        edtWord.getText().toString().trim(),
-//                        edtDef.getText().toString().trim(),
-//                        hinhanh
-//                )
-
-                    db.addTu(edtWord.getText().toString(), edtDef.getText().toString(), hinhanh);
-                    Toast.makeText(note_themtu_activity.this, "Added :))", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(note_themtu_activity.this,note_activity.class));
-
-            }
-        });
-        btnCancel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(note_themtu_activity.this,note_activity.class);
-                startActivity(i);
-            }
-        });
+        bindingView();
+        bindingAction();
     }
 
     @Override

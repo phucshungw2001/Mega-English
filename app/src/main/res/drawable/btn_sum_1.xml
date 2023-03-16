@@ -9,8 +9,6 @@
                 android:endColor="#8B121313"
                 android:startColor="@color/white"
                 ></gradient>
-            <corners    android:bottomLeftRadius="500sp"
-                />
             <stroke android:color="@color/white" android:width="2dp"/>
 
         </shape>
