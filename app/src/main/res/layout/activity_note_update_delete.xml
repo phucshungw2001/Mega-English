@@ -78,7 +78,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="150dp"
             android:layout_marginRight="60dp"
-            android:background="@drawable/ic_stat_name"
+            android:background="@drawable/upload"
             tools:ignore="MissingConstraints" />
 
     </LinearLayout>

@@ -21,12 +21,11 @@ public class dictionaryRequest extends AsyncTask <String, Integer, String>
     @SuppressLint("StaticFieldLeak")
     TextView txtInf;
 
-    dictionaryRequest(Context context, TextView tv)
+    dictionaryRequest(Context context, TextView tV)
     {
         this.context = context;
-        txtInf = tv;
+        txtInf = tV;
     }
-
     @Override
     protected String doInBackground(String... params) {
 
@@ -39,6 +38,7 @@ public class dictionaryRequest extends AsyncTask <String, Integer, String>
             urlConnection.setRequestProperty("app_id",app_id);
             urlConnection.setRequestProperty("app_key",app_key);
 
+            // read the output from the server
             BufferedReader reader = new BufferedReader(new InputStreamReader(urlConnection.getInputStream()));
             StringBuilder stringBuilder = new StringBuilder();
 
@@ -48,6 +48,7 @@ public class dictionaryRequest extends AsyncTask <String, Integer, String>
             }
 
             return stringBuilder.toString();
+
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -59,6 +60,7 @@ public class dictionaryRequest extends AsyncTask <String, Integer, String>
     @Override
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
+
         String def;
         try {
             JSONObject js = new JSONObject(result);

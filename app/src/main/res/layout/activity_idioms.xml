@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_blue"
+    tools:context=".idioms_activity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_gravity="center_vertical"
+        android:background="#51AFF8"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/idiom1"
+                android:layout_width="410dp"
+                android:layout_height="410dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/idiom1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/new_blue"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:text="Stuck between a rock and a hard place :\n Tiến thoái lưỡng nan" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/idiom2"
+                android:layout_width="410dp"
+                android:layout_height="410dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/idiom2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:textSize="18dp"
+                android:text="Easier said than done :\n Nói thì dễ làm thì khó" />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/idiom3"
+                    android:layout_width="410dp"
+                    android:layout_height="410dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/idiom3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:text="Silence is golden :\n Im lặng là vàng" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
