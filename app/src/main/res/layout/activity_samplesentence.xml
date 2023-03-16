@@ -13,9 +13,9 @@
         android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:background="#247AAA"
-        android:text="Chủ đề"
+        android:text="Topic"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/red"
         android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +65,7 @@
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_2"
+                    android:textColor="#1B1919"
                     android:text="greeting" />
             </LinearLayout>
 
@@ -81,6 +82,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
+                    android:textColor="#1B1919"
                     android:background="@drawable/btn_theme_1"
                     android:text="job" />
 
@@ -97,6 +99,7 @@
                 <Button
                     android:id="@+id/btnHealth"
                     android:layout_width="match_parent"
+                    android:textColor="#1B1919"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_2"
@@ -116,6 +119,7 @@
                     android:id="@+id/btnEntertain"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textColor="#1B1919"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_1"
                     android:text="entertainment" />
@@ -133,6 +137,7 @@
                 <Button
                     android:id="@+id/btnPlace"
                     android:layout_width="match_parent"
+                    android:textColor="#1B1919"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_2"
@@ -151,6 +156,7 @@
                 <Button
                     android:id="@+id/btnEating"
                     android:layout_width="match_parent"
+                    android:textColor="#1B1919"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_1"
@@ -169,6 +175,7 @@
                 <Button
                     android:id="@+id/btnMore"
                     android:layout_width="match_parent"
+                    android:textColor="#1B1919"
                     android:layout_height="match_parent"
                     android:layout_margin="2dp"
                     android:background="@drawable/btn_theme_2"

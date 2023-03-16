@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".greeting_sen"
-    android:background="@color/light_blue">
+    android:background="@color/yellow">
 
     <TextView
         android:id="@+id/txtGreeting"
@@ -15,6 +15,7 @@
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
+        android:textColor="#9C0707"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="42dp" />
@@ -38,6 +39,7 @@
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="HOW WAS YOUR TRIP ?\nChuyến đi của bạn thế nào ?"
                 android:textSize="18dp" />
 
@@ -46,6 +48,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="ARE THERE ANY INTERESTING ATTRACTIONS ?\nCó địa điểm du lịch nào thú vị không ?"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -54,6 +57,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="WHAT'S SPECIAL PRODUCT HERE ?\nỞ đây có đặc sản gì ?"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -61,6 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="WHAT CAN I FIND A RESTAURANT ?\nTôi có thể tìm thấy nhà hàng ở đâu ?"
                 android:textSize="18dp"
@@ -68,6 +73,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:textColor="#1B1919"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="HOW DO YOU GET TO THE STADIUM ?\nLàm thế nào để đến sân vận động ?"
@@ -76,6 +82,7 @@
 
             <TextView
                 android:layout_width="match_parent"
+                android:textColor="#1B1919"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
@@ -87,6 +94,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="DO YOU KNOW WHERE IT IS ?\nBạn có biết nó ở đâu không ?"
                 android:textSize="18dp"
@@ -96,6 +104,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="IS IT TOO FAR TO WALK THERE\nĐi bộ đến đó xa lắm không ?"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -105,6 +114,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="IS THIS THE RIGHT WAY TO THE RIVER BANK ?\nCó đúng là đường này đến bờ sông không ?"
                 android:textSize="18dp" />
@@ -114,6 +124,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="WHAT IS THE BEST WAY TO THE HCM ?\nCách tốt nhất để đến HCM ?"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -124,6 +135,7 @@
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="I'M LOOKING FOR THIS ADDRESS\nTôi đang tìm địa chỉ này"
                 android:textSize="18dp" />
 
@@ -133,6 +145,7 @@
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="WHERE EXACTLY AM I?\nChính xác tôi đang ở đâu ?"
                 android:textSize="18dp" />
 
@@ -140,6 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="CAN YOU SHOW ME ON THE MAP ?\Bạn có thể chỉ trên bản đồ không ?"
                 android:textSize="18dp"

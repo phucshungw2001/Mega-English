@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
-        android:text="Thêm từ"
+        android:text="Add Word"
         android:textColor="@color/black"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -40,7 +40,7 @@
             android:layout_gravity="center"
             android:backgroundTint="#878080"
             android:gravity="center"
-            android:hint="Nhập từ ..."
+            android:hint="Enter Word ..."
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
 
@@ -52,7 +52,7 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="#7E7777"
             android:gravity="center"
-            android:hint="Định nghĩa..."
+            android:hint="Define..."
             android:textColor="@color/black"
             android:textColorHint="@color/black" />
 

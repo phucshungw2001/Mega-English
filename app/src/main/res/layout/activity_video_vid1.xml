@@ -9,7 +9,7 @@
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:videoId="FeKGaATWeQk"
+        app:videoId="RcwciWLGZw4"
         app:autoPlay="false"
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

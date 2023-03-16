@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_horizontal"
-        android:text="Mẫu câu ăn uống"
+        android:text="Eating"
         android:textColor="#B60D0D"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"

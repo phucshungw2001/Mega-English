@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".greeting_sen"
-    android:background="@color/light_blue">
+    android:background="@color/yellow">
 
     <TextView
         android:id="@+id/txtGreeting"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center_horizontal"
+        android:textColor="#9C0707"
         android:text="Greeting Sentences "
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,6 +39,7 @@
                 android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="HELLO\nXin chào"
+                android:textColor="#1B1919"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
             <TextView
@@ -46,6 +48,7 @@
                 android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="HOW ARE YOU ?\nBạn khỏe không ?"
+                android:textColor="#1B1919"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
             <TextView
@@ -54,6 +57,7 @@
                 android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="HOW'S IT GOING ?\nDạo này sao rồi ?"
+                android:textColor="#1B1919"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
             <TextView
@@ -62,6 +66,7 @@
                 android:layout_marginTop="2dp"
                 android:gravity="center"
                 android:text="LONG TIME NO SEE \nLâu rồi không gặp"
+                android:textColor="#1B1919"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
             <TextView
@@ -69,6 +74,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="SO GOOD TO SEE YOU AGAIN\nThật tốt khi gặp lại bạn"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -78,6 +84,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="IT'S MY HONOR TO MEET YOU\nRất hân hạnh được gặp bạn"
                 android:textSize="18dp" />
@@ -86,6 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="PLEASE HAVE A SEAT\nMời bàn ngồi"
                 android:textSize="18dp"
@@ -94,6 +102,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="THANKS FOR AGREEING TO MEET WITH ME\nCảm ơn vì đồng ý cuộc hẹn này"
                 android:textSize="18dp"
@@ -103,6 +112,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="GOOD MORNING\nChào buổi sáng"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -111,6 +121,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="HOW ARE YOU TODAY ?\nHôm nay bạn thế nào ?"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -120,6 +131,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:background="@color/new_blue"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="WHAT'S UP\nDạo này có gì mới không ?"
                 android:textSize="18dp" />
@@ -129,6 +141,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
                 android:gravity="center"
+                android:textColor="#1B1919"
                 android:text="NICE TO MEET YOU\nRất vui được gặp bạn"
                 android:textSize="18dp"
                 android:background="@color/new_blue"/>
@@ -136,6 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="2dp"
+                android:textColor="#1B1919"
                 android:gravity="center"
                 android:text="HELLO\nXin Chào"
                 android:textSize="18dp"
