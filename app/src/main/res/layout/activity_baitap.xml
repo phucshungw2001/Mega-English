@@ -4,24 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/palette"
+    android:background="@drawable/brg_home"
     tools:context=".baitap_activity">
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backgroundbaitap" />
 
     <TextView
         android:id="@+id/txtQues"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:hint="A dog has ... legs"
@@ -36,24 +25,26 @@
 
     <Button
         android:id="@+id/btnSubmit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button2_layout"
-        android:text="Submit"
+        android:layout_width="316dp"
+        android:layout_height="56dp"
+        android:background="@drawable/btn_submit"
+        android:text="Gửi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtAns"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="0.467" />
 
     <EditText
         android:id="@+id/edtAns"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:backgroundTint="#00FFFFFF"
+        android:backgroundTintMode="src_in"
         android:gravity="center"
-        android:hint="Your answer"
+        android:hint="Câu trả lời..."
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,6 +52,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtQues"
         app:layout_constraintVertical_bias="0.071" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Bài tập"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="39sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
