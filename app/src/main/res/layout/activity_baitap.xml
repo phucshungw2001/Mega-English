@@ -13,7 +13,7 @@
         android:layout_height="127dp"
         android:layout_gravity="center"
         android:gravity="center"
-        android:hint="A dog has ... legs"
+        android:hint="Questions"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="24dp"
@@ -22,6 +22,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.265" />
+
 
     <Button
         android:id="@+id/btnSubmit"
@@ -33,8 +34,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.589"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtAns"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintTop_toBottomOf="@+id/txtPoint" />
 
 
     <EditText
@@ -68,6 +68,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.116" />
+
+    <TextView
+        android:id="@+id/txtPoint"
+        android:layout_width="205dp"
+        android:layout_height="53dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Point"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="39sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAns"
+        app:layout_constraintVertical_bias="0.175" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

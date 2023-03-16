@@ -91,6 +91,7 @@ public class baitap_activity extends AppCompatActivity
             "single",
             "a"};
     int currentQuestionIndex = 0;
+    int diem = 0; // Khai báo biến điểm số ban đầu
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -112,6 +113,7 @@ public class baitap_activity extends AppCompatActivity
 
                 if (userAnswer.equals(correctAnswer)) {
                     Toast.makeText(baitap_activity.this, "Right", Toast.LENGTH_SHORT).show();
+                    diem += 10;
                     currentQuestionIndex++; // Chuyển tiếp đến câu hỏi tiếp theo
 
                     if (currentQuestionIndex < questions.length) {
@@ -123,6 +125,8 @@ public class baitap_activity extends AppCompatActivity
                 } else {
                     Toast.makeText(baitap_activity.this, "Wrong", Toast.LENGTH_SHORT).show();
                 }
+                TextView tvDiem = findViewById(R.id.txtPoint );
+                tvDiem.setText("Point "  +  diem);
             }
         });
     }
