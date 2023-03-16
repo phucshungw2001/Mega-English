@@ -36,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edtAns"
         app:layout_constraintVertical_bias="0.467" />
 
+
     <EditText
         android:id="@+id/edtAns"
         android:layout_width="300dp"
@@ -60,7 +61,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Bài tập"
         android:textAlignment="center"
-        android:textColor="#2196F3"
+        android:textColor="#FFFF"
         android:textSize="39sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
